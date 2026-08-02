@@ -43,6 +43,7 @@ Small, focused repositories exploring architecture and testing concepts:
 Applying academic algorithms to everyday problems:
 
 - [algo-louvain-php](https://github.com/DeGraciaMathieu/algo-louvain-php) — A PHP implementation of the Louvain community detection algorithm.
+- [GirvanNewman](https://github.com/DeGraciaMathieu/GirvanNewman) — A PHP implementation of the Girvan-Newman community detection algorithm.
 - [MyersInspector](https://github.com/DeGraciaMathieu/MyersInspector) — Code inspection based on the Myers diff algorithm.
 - [php-rasch](https://github.com/DeGraciaMathieu/php-rasch) — The Rasch model (item response theory) implemented in PHP.
 
