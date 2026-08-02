@@ -38,6 +38,14 @@ Small, focused repositories exploring architecture and testing concepts:
 - [interface-testing](https://github.com/DeGraciaMathieu/interface-testing) — How to test an interface with PHPUnit.
 - [php-easy-breaker](https://github.com/DeGraciaMathieu/php-easy-breaker) — A PHP implementation of the circuit breaker pattern.
 
+## 🧮 Algorithmic experiments
+
+Applying academic algorithms to everyday problems:
+
+- [algo-louvain-php](https://github.com/DeGraciaMathieu/algo-louvain-php) — A PHP implementation of the Louvain community detection algorithm.
+- [MyersInspector](https://github.com/DeGraciaMathieu/MyersInspector) — Code inspection based on the Myers diff algorithm.
+- [php-rasch](https://github.com/DeGraciaMathieu/php-rasch) — The Rasch model (item response theory) implemented in PHP.
+
 ## 🤖 AI tooling
 
 - [claude-game-refactor-plugin](https://github.com/DeGraciaMathieu/claude-game-refactor-plugin) — Claude Code plugin that turns a single-file HTML/CSS/JS game prototype into a split, tested and documented codebase.
