@@ -13,8 +13,6 @@ I enjoy building static analysis tools to understand and measure the quality of 
 - [php-variable-lifetime-analyzer](https://github.com/DeGraciaMathieu/php-variable-lifetime-analyzer) — Track your variables' lifetime to encourage shorter scopes.
 - [php-line-length-detector](https://github.com/DeGraciaMathieu/php-line-length-detector) — A simple way to analyze the line length of your PHP files.
 
-📚 Documentation for these tools: [php-quality-tools.com](https://php-quality-tools.com/)
-
 ## 🕸️ The php-dep ecosystem
 
 A complete toolchain to explore the dependency graph of a PHP codebase:
