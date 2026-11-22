@@ -4,8 +4,6 @@ Backend lead and software architect, with nearly fifteen years of PHP and Larave
 
 I build with AI agents, and I build the tools that keep their code understandable.
 
-[laravel-france.com](https://laravel-france.com) · [php-the-readability-way.fr](https://php-the-readability-way.fr)
-
 ## 🤖 Building with agents
 
 - **[Établi](https://github.com/DeGraciaMathieu/etabli)**: a self-hosted forge where an agent writes the code and the decisions stay with you. Today, Claude Code runs headless on an EC2 instance, driven from Telegram, and only comes back to you for what is yours to decide. No inbound port: long polling and SSH over SSM.
