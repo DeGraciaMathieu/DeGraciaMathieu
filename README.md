@@ -1,51 +1,55 @@
-# Hi there 👋
+# Mathieu De Gracia
 
-PHP/Laravel developer focused on **code quality** and **software architecture**.
-I enjoy building static analysis tools to understand and measure the quality of PHP applications.
+Backend lead and software architect, with nearly fifteen years of PHP and Laravel behind me. Lead Chapter Backend at GlobalExam, co-founder of Laravel France, author of PHP The Readability Way.
 
-## 🔍 Static analysis tools
+I build with AI agents, and I build the tools that keep their code understandable.
 
-- [php-smelly-code-detector](https://github.com/DeGraciaMathieu/php-smelly-code-detector) — Detects code smells by assessing complexity to identify potentially problematic code.
-- [php-class-dependencies-analyzer](https://github.com/DeGraciaMathieu/php-class-dependencies-analyzer) — Monitor the dependencies and instability of your classes.
-- [php-wording-detector](https://github.com/DeGraciaMathieu/php-wording-detector) — Analyze and split the words contained in your code to check your DDD approach.
-- [php-arguments-detector](https://github.com/DeGraciaMathieu/php-arguments-detector) — Keep control over the complexity of your methods by checking their number of arguments.
-- [php-git-insights-analyzer](https://github.com/DeGraciaMathieu/php-git-insights-analyzer) — Analyze the Git history of your PHP files.
-- [php-variable-lifetime-analyzer](https://github.com/DeGraciaMathieu/php-variable-lifetime-analyzer) — Track your variables' lifetime to encourage shorter scopes.
-- [php-line-length-detector](https://github.com/DeGraciaMathieu/php-line-length-detector) — A simple way to analyze the line length of your PHP files.
+[laravel-france.com](https://laravel-france.com) · [php-the-readability-way.fr](https://php-the-readability-way.fr)
 
-## 🕸️ The php-dep ecosystem
+## 🤖 Building with agents
 
-A complete toolchain to explore the dependency graph of a PHP codebase:
+- **[Établi](https://github.com/DeGraciaMathieu/etabli)**: a self-hosted forge where an agent writes the code and the decisions stay with you. Today, Claude Code runs headless on an EC2 instance, driven from Telegram, and only comes back to you for what is yours to decide. No inbound port: long polling and SSH over SSM.
+- **[What moved](https://github.com/DeGraciaMathieu/what-moved)**: a GitHub Action that maps what a pull request moved among your PHP contexts and their dependencies. Reviewing a pull request written by an AI starts with a map, not a diff. The analysis lives in [what-moved-core](https://github.com/DeGraciaMathieu/what-moved-core).
+- **[quotabar](https://github.com/DeGraciaMathieu/quotabar)**: a macOS menu bar app showing where you stand on your Claude Code plan limits.
+- **[claude-game-refactor-plugin](https://github.com/DeGraciaMathieu/claude-game-refactor-plugin)**: a Claude Code plugin that turns a single-file HTML game prototype into a split, tested and documented codebase.
+- **[tiny-shakespeare-gpt](https://github.com/DeGraciaMathieu/tiny-shakespeare-gpt)**: a minimal character-level GPT, about a million parameters in a single file, built from scratch to understand how a GPT works.
 
-- [php-dep](https://github.com/DeGraciaMathieu/php-dep) — Static analyzer that maps class dependency relationships across your project.
-- [php-dep-dashboard](https://github.com/DeGraciaMathieu/php-dep-dashboard) — A web dashboard to visualize class dependencies, coupling metrics, and instability scores.
-- [php-dep-louvain](https://github.com/DeGraciaMathieu/php-dep-louvain) — Detect class communities in a dependency graph using the Louvain algorithm.
+## 🏛️ Keeping architecture readable
 
-## 🧰 Laravel packages
+Tools to measure and explain the structure of a PHP codebase.
 
-- [Manager](https://github.com/DeGraciaMathieu/Manager) — Implementation of the Manager pattern existing in the Laravel framework.
-- [laravel-rapid-bind](https://github.com/DeGraciaMathieu/laravel-rapid-bind) — Quickly and easily create singletons in the Laravel container.
+- **[php-dep](https://github.com/DeGraciaMathieu/php-dep)**: extracts the class dependency graph of a project as JSON, covering inheritance, interfaces, traits, injections, instantiations, static calls, attributes. Files are parsed in parallel. Two tools build on it: [php-dep-dashboard](https://github.com/DeGraciaMathieu/php-dep-dashboard), an interactive graph explorer in the browser, and [php-dep-louvain](https://github.com/DeGraciaMathieu/php-dep-louvain), which detects communities of tightly coupled classes.
+- **[php-class-dependencies-analyzer](https://github.com/DeGraciaMathieu/php-class-dependencies-analyzer)**: measures how classes and components depend on each other, finds dependency cycles and breaks of the Stable Dependencies Principle, then fails your CI when the architecture drifts.
+- **Smaller detectors, one signal each:** [code smells](https://github.com/DeGraciaMathieu/php-smelly-code-detector) · [vocabulary](https://github.com/DeGraciaMathieu/php-wording-detector) · [arguments](https://github.com/DeGraciaMathieu/php-arguments-detector) · [line length](https://github.com/DeGraciaMathieu/php-line-length-detector) · [variable lifetime](https://github.com/DeGraciaMathieu/php-variable-lifetime-analyzer) · [Git history](https://github.com/DeGraciaMathieu/php-git-insights-analyzer)
+## 🔭 Explorations
 
-## 🎓 Learning by example
+Going back to where ideas come from: an old architecture and academic algorithms, rebuilt in PHP to understand them.
 
-Small, focused repositories exploring architecture and testing concepts:
+- **[ericsson-1967](https://github.com/DeGraciaMathieu/ericsson-1967)**: a proof of concept of a blocks-and-signals architecture, inspired by the Ericsson telephone exchanges of the late 1960s. No code describes the business scenario: the behaviour emerges from named signals travelling between fixed blocks.
+- **[algo-louvain-php](https://github.com/DeGraciaMathieu/algo-louvain-php)** and **[GirvanNewman](https://github.com/DeGraciaMathieu/GirvanNewman)**: two community detection algorithms from graph theory, implemented in PHP.
+- **[php-rasch](https://github.com/DeGraciaMathieu/php-rasch)**: the Rasch model from item response theory, implemented in PHP.
 
-- [archi-event-bus](https://github.com/DeGraciaMathieu/archi-event-bus) — An Event Bus demonstrating decoupled communication between Bounded Contexts via Domain Events.
-- [aggregate-entity-valueobject](https://github.com/DeGraciaMathieu/aggregate-entity-valueobject) — Differentiate the concepts of aggregate, entity, and value object.
-- [dummy-stub-spy-mock](https://github.com/DeGraciaMathieu/dummy-stub-spy-mock) — Differentiate the types of test doubles in PHP.
-- [interface-testing](https://github.com/DeGraciaMathieu/interface-testing) — How to test an interface with PHPUnit.
-- [php-easy-breaker](https://github.com/DeGraciaMathieu/php-easy-breaker) — A PHP implementation of the circuit breaker pattern.
+## 🛠️ Applications
 
-## 🧮 Algorithmic experiments
+- **[Trivia](https://github.com/DeGraciaMathieu/trivia)**: the stories behind the conventions of our trade, like the `X-` prefix, `chmod 777`, Ariane 501 or the core dump. A Laravel site with about seventy stories, and an MCP server secured with OAuth 2.1 so agents can read and write them.
+- **[devdock](https://github.com/DeGraciaMathieu/devdock)**: a macOS menu bar app for the developer's daily routine: open a project, see what is uncommitted or unpushed, find which process listens on which port.
+- **[coreload](https://github.com/DeGraciaMathieu/coreload)**: a macOS menu bar app showing which processes load your CPU, counted in cores.
+- **[pdf-translate-inplace](https://github.com/DeGraciaMathieu/pdf-translate-inplace)**: translates English PDFs to French in place, keeping the original layout, images and fonts.
 
-Applying academic algorithms to everyday problems:
+## 🎮 Game lab
 
-- [algo-louvain-php](https://github.com/DeGraciaMathieu/algo-louvain-php) — A PHP implementation of the Louvain community detection algorithm.
-- [GirvanNewman](https://github.com/DeGraciaMathieu/GirvanNewman) — A PHP implementation of the Girvan-Newman community detection algorithm.
-- [MyersInspector](https://github.com/DeGraciaMathieu/MyersInspector) — Code inspection based on the Myers diff algorithm.
-- [php-rasch](https://github.com/DeGraciaMathieu/php-rasch) — The Rasch model (item response theory) implemented in PHP.
+Games are where I push AI-assisted development furthest. Since summer 2026 I have built around thirty prototypes. Each one starts as a single HTML file, then my Claude Code plugin, [claude-game-refactor-plugin](https://github.com/DeGraciaMathieu/claude-game-refactor-plugin), turns it into native ES modules with tests and documentation. All the games below went through it (most are in French):
 
-## 🤖 AI tooling
+| Game | What it is |
+| --- | --- |
+| [Tenir la charge](https://github.com/DeGraciaMathieu/hold-the-load) | Place servers, caches, queues and databases, then watch your infrastructure take the traffic, the outages and the attacks. 19 missions, a growth mode and a daily challenge. |
+| [Tête Carrée](https://github.com/DeGraciaMathieu/tete-carree) | Arena survival against waves of zombies, with keyboard, touch or gamepad. Test and performance CI, [published on itch.io](https://857wpwth.itch.io/tete-carree). |
+| [Livre-jeu](https://github.com/DeGraciaMathieu/gamebook-engine) | A choose-your-own-adventure gamebook for phones, with dice rolls and combat. |
+| [Terra Incognita](https://github.com/DeGraciaMathieu/old-school-wargame) | A turn-based hex wargame: two armies of equal strength on a map drawn at random each game. Eight turns, against an AI or two players on one screen. |
+| [Dwarf](https://github.com/DeGraciaMathieu/dwarf) | A colony simulation inspired by Dwarf Fortress, rendered in ASCII. You give orders, the dwarves decide. |
+| [Contrée](https://github.com/DeGraciaMathieu/contree) | A solitaire hex-tile game: build a country by closing mountains, drawing rivers and surrounding villages. |
 
-- [claude-game-refactor-plugin](https://github.com/DeGraciaMathieu/claude-game-refactor-plugin) — Claude Code plugin that turns a single-file HTML/CSS/JS game prototype into a split, tested and documented codebase.
-- [cursor-mdc-rules](https://github.com/DeGraciaMathieu/cursor-mdc-rules) — Cursor rules for writing clear, readable, and maintainable PHP code.
+## ✍️ Writing and community
+
+- Co-founder of **[Laravel France](https://laravel-france.com)**, where I write about Laravel, architecture and now AI.
+- **[PHP The Readability Way](https://php-the-readability-way.fr)**: articles on making PHP code easier to read.
