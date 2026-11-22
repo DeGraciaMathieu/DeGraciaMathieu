@@ -1,6 +1,6 @@
 # Mathieu De Gracia
 
-Backend lead and software architect, with nearly fifteen years of PHP and Laravel behind me. Lead Chapter Backend at GlobalExam, co-founder of Laravel France, author of PHP The Readability Way.
+Backend lead and software architect, with nearly fifteen years of professional PHP behind me, and Laravel since version 4. Lead Chapter Backend at GlobalExam, co-founder of Laravel France, author of PHP The Readability Way.
 
 I build with AI agents, and I build the tools that keep their code understandable.
 
